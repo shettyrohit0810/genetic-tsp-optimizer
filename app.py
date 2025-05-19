@@ -1,10 +1,6 @@
 import random
 import numpy as np
 
-
-
-
-
 def read_input(file_location):
     with open(file_location, 'r') as file:
         num_cities = int(file.readline().strip())
@@ -196,7 +192,8 @@ def main():
     no_improvement_limit = 50
 
 
-    population = initialize_pop(num_cities, if len(best_routepopulation_size, distance_matrix)
+    population = initialize_pop(num_cities, population_size, distance_matrix)
+
 
     best_distance_overall = float('inf')
     no_improve_counter = 0
